@@ -17,3 +17,6 @@ function change_reg_message($message)
     return $message;
   }
 }
+
+// Change Registration Message
+add_action('login_message', 'change_reg_message');

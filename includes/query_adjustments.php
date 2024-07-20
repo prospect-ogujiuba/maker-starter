@@ -15,3 +15,6 @@ function themeStarter_adjust_queries($query)
     $query->set('order', 'ASC');
   }
 }
+
+// Adjust Queries
+add_action('pre_get_posts', 'themeStarter_adjust_queries');

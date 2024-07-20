@@ -12,3 +12,6 @@ function setup_form_args($form_args)
 
     return $form_args;
 }
+
+// Gravity Forms Ajax Sumbit
+add_filter('gform_form_args', 'setup_form_args');

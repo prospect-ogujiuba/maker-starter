@@ -23,3 +23,13 @@ function ourLoginCSS()
 {
   wp_enqueue_style('login styles', get_theme_file_uri('/assets/css/styles.css'));
 }
+
+// Customize Login Screen Title
+add_filter('login_headertitle', 'ourLoginTitle');
+
+// Change Login Page header url
+add_filter('login_headerurl', 'ourHeaderUrl');
+
+// Enqueue out stylesheet for login screen
+add_action('login_enqueue_scripts', 'ourLoginCSS');
+

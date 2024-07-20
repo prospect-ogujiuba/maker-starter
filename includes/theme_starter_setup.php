@@ -108,3 +108,9 @@ function themeStarter_setup()
     echo '<div class="breadcrumbs font-bold">' . implode(' <i class="bi bi-chevron-double-right"></i> ', $breadcrumbs) . '</div>';
   }
 }
+
+// Theme Starter Features
+add_action('after_setup_theme', 'themeStarter_setup');
+
+// Hook the function to run when you visit the WordPress admin area
+// add_action('admin_init', 'update_page_content_from_file');
