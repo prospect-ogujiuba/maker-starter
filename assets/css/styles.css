@@ -168,15 +168,15 @@
 
 #login h1 a,
 .login h1 a {
-  background-image: url("http://prospectogujiuba.test/wp-content/uploads/prospect-ogujiuba-logo.png");
+  background-image: url("../images/logos/logo-ph-black.png");
   background-color: white;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 280px;
+  background-size: 100px;
   border-radius: 3rem;
-  width: 280px;
+  width: 175px;
   height: 84px;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   margin: 0px 0px 0.5rem;
 }
 
