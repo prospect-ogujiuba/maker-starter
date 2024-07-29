@@ -3,7 +3,7 @@
 /**
  * Gravity Forms Functions.
  * 
- * @package ThemeStarter
+ * @package makerstarter
  */
 
 function setup_form_args($form_args)

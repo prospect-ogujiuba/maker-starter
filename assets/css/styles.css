@@ -47,17 +47,17 @@
   --copper-800: #823a24;
   --copper-900: #612514;
   /* Yellow */
-  --yellow-50: #fefae8;
-  --yellow-100: #fff4c2;
-  --yellow-200: #ffe689;
-  --yellow-300: #ffcc33;
-  --yellow-400: #fdb912;
-  --yellow-500: #ec9f06;
-  --yellow-600: #cc7902;
-  --yellow-700: #a35405;
-  --yellow-800: #86420d;
-  --yellow-900: #723611;
-  --yellow-950: #431a05;
+  --primary-50: #fefae8;
+  --primary-100: #fff4c2;
+  --primary-200: #ffe689;
+  --primary-300: #ffcc33;
+  --primary-400: #fdb912;
+  --primary-500: #ec9f06;
+  --primary-600: #cc7902;
+  --primary-700: #a35405;
+  --primary-800: #86420d;
+  --primary-900: #723611;
+  --primary-950: #431a05;
   /* Green */
   --green-50: #f4f9f7;
   --green-100: #d9eee7;
@@ -71,16 +71,16 @@
   --green-900: #26413c;
   --green-950: #102320;
   /* Blue */
-  --primary-50: #ebf2f5;
-  --primary-100: #d8e5eb;
-  --primary-200: #a3becc;
-  --primary-300: #7698ad;
-  --primary-400: #315370;
-  --primary-500: #0a1c32;
-  --primary-600: #08192e;
-  --primary-700: #061326;
-  --primary-800: #040e1f;
-  --primary-900: #020917;
+  --blue-50: #ebf2f5;
+  --blue-100: #d8e5eb;
+  --blue-200: #a3becc;
+  --blue-300: #7698ad;
+  --blue-400: #315370;
+  --blue-500: #0a1c32;
+  --blue-600: #08192e;
+  --blue-700: #061326;
+  --blue-800: #040e1f;
+  --blue-900: #020917;
   /* Cadet */
   --cadet-50: #f7fafa;
   --cadet-100: #f5f7f7;
@@ -125,4 +125,112 @@
   --pink-700: #be185d;
   --pink-800: #9d174d;
   --pink-900: #831843;
+}
+
+/* Login Page Styles */
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.login #nav {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.login #nav a,
+.login #backtoblog a {
+  color: white;
+}
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.login h1 a:hover {
+  color: var(--primary-200);
+}
+
+.login .button.wp-hide-pw {
+  color: var(--black);
+}
+
+.login .button.wp-hide-pw:hover {
+  color: var(--primary-300);
+}
+
+.login .button.wp-hide-pw:focus {
+  background: 0 0;
+  border-color: var(--primary-900);
+  box-shadow: 0 0 0 1px;
+  outline: 2px solid transparent;
+}
+
+#login h1 a,
+.login h1 a {
+  background-image: url("http://prospectogujiuba.test/wp-content/uploads/prospect-ogujiuba-logo.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 280px;
+  border-radius: 3rem;
+  width: 280px;
+  height: 84px;
+  padding: 0 2rem;
+  margin: 0px 0px 0.5rem;
+}
+
+.login form {
+  border-radius: 8px;
+}
+
+.login .message {
+  border-left: 8px solid var(--primary-500);
+}
+
+/* Customize Login Screen Styles */
+body.login .button-primary {
+  font-size: 100%;
+  width: 100%;
+  margin: 0.5rem 0 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: 0.75rem 1.25rem;
+  font-weight: 400;
+  left: auto;
+  color: black;
+  background-color: var(--primary-300);
+  border: 0;
+  display: inline-block;
+  background-image: none;
+  box-shadow: none;
+  text-shadow: none;
+  border-radius: 0.375rem;
+  transition: all 600ms ease-in-out;
+}
+
+body.login .button-primary:active,
+body.login .button-primary:focus,
+body.login .button-primary:hover {
+  background-color: var(--primary-500);
+  color: black;
+}
+
+body.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../images/bgs/login_bg.jpeg");
+  background-color: var(--gray-500);
+  background-blend-mode: multiply;
+}
+
+.login-action-confirm_admin_email #login {
+  margin-top: auto;
 }

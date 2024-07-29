@@ -3,7 +3,7 @@
 /**
  * Site registration.
  * 
- * @package ThemeStarter
+ * @package makerstarter
  */
 
 // Change Registration Message

@@ -128,6 +128,9 @@ const theme_starter_colors = {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  corePlugins: {
+    preflight: false,
+  },
   content: [
     './*.{html,js,cjs,php}',
     './src/**/*.{html,js,cjs,php}',

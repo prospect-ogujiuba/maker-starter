@@ -3,7 +3,7 @@
 /**
  * Update wordpress content on admin init. 
  * 
- * @package ThemeStarter
+ * @package makerstarter
  */
 
 

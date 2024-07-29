@@ -3,10 +3,10 @@
 /**
  * Query Adjustments.
  * 
- * @package ThemeStarter
+ * @package makerstarter
  */
 
-function themeStarter_adjust_queries($query)
+function makerstarter_adjust_queries($query)
 {
 
   // Search Page Query Adjustment
@@ -17,4 +17,4 @@ function themeStarter_adjust_queries($query)
 }
 
 // Adjust Queries
-add_action('pre_get_posts', 'themeStarter_adjust_queries');
+add_action('pre_get_posts', 'makerstarter_adjust_queries');

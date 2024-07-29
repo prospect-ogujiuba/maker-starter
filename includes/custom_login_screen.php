@@ -3,7 +3,7 @@
 /**
  * Site login.
  * 
- * @package ThemeStarter
+ * @package makerstarter
  */
 
 // Change Login Page header url
@@ -25,11 +25,10 @@ function ourLoginCSS()
 }
 
 // Customize Login Screen Title
-add_filter('login_headertitle', 'ourLoginTitle');
+add_filter('login_headertext', 'ourLoginTitle');
 
 // Change Login Page header url
 add_filter('login_headerurl', 'ourHeaderUrl');
 
 // Enqueue out stylesheet for login screen
 add_action('login_enqueue_scripts', 'ourLoginCSS');
-

@@ -3,7 +3,7 @@
 /**
  * Archive Prexix Removal Function.
  * 
- * @package ThemeStarter
+ * @package makerstarter
  */
 
 function wpdocs_remove_archive_title_prefixes($title, $original_title)
